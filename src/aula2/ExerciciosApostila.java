@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ExerciciosApostila {
 
 	public static void main(String[] args) {
-		ex8();
+		ex7();
 	}
 	
 	public static void ex1() {
@@ -106,7 +106,7 @@ public class ExerciciosApostila {
 		teclado.close();
 	}
 
-	public static void ex8() { //TEM QUE ACABAR ESSE AQUI AINDA
+	public static void ex8() { // STILL UNDONE 
 
 		for (int i = 1; i <= 5; i++) {
 			System.out.print(i + " ");
