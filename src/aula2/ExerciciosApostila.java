@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class ExerciciosApostila {
 
 	public static void main(String[] args) {
-		ex7();
+		ex8();
 	}
-	
+
 	public static void ex1() {
 		// 150 a 300
 		for (int i = 150; i <= 300; i++) {
@@ -106,16 +106,21 @@ public class ExerciciosApostila {
 		teclado.close();
 	}
 
-	public static void ex8() { // STILL UNDONE 
+	public static void ex8() {
 
-		for (int i = 1; i <= 5; i++) {
-			System.out.print(i + " ");
-			for (int j = 1; j <= 5; j++) {
-				System.out.println();
+		Scanner teclado = new Scanner(System.in);
+
+		System.out.println("Insira um valor inteiro (n):");
+		int num = teclado.nextInt();
+
+		for (int i = 1; i <= num; i++) {
+			for (int j = 1; j <= i; j++) {
+				int f = j * i;
+				System.out.print(f + " ");
 			}
 			System.out.println();
 		}
-
+		teclado.close();
 	}
 
 }
